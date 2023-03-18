@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-image: url(./image/mainbg2.jpg);
+        }
+        .leftdiv{
+            width: 70rem;
+            height: auto;
+            margin-top: 10rem;
+            margin-left: 15rem;
+            float: left;
+        }
+        .maintit{
+            font-size: 12rem;
+            color: white;
+        }
+        .maintit2{
+            font-size: 2rem;
+            color: rgb(209, 176, 176);
+        }
+        .maintit3{
+            font-size: 1rem;
+            color: white;
+            margin-top: 22rem;
+        }
+        .maintit4{
+            font-size: 1rem;
+            color: antiquewhite;
+        }
+        .rightdiv{
+            width: auto;
+            height: auto;
+            margin-top: 10rem;
+            margin-left: 15rem;
+            float: left;
+        }
+        .rtit{
+            font-size: 3.5rem;
+            color: white;
+            margin-left: 42rem;
+        }
+        .box1{
+            width: 40rem;
+            height: 12rem;
+            margin-top: 5rem;
+            margin-left: 48rem;
+            background-color: aquamarine;
+            background-image: url(./image/game.jpg);
+            background-size: 100% ;
+            border-radius: 2rem;
+        }
+        .box2{
+            width: 50rem;
+            height: 12rem;
+            margin-top: 5rem;
+            margin-left: 38rem;
+            background-color: aquamarine;
+            background-image: url(./image/grass.jpg);
+            background-size: 100% ;
+            border-radius: 2rem;
+        }
+        .box3{
+            width: 60rem;
+            height: 12rem;
+            margin-top: 5rem;
+            margin-left: 28rem;
+            background-color: aquamarine;
+            background-image: url(./image/mubu.jpg);
+            background-size: 100% ;
+            border-radius: 2rem;
+        }
+        .box4{
+            width: 70rem;
+            height: 12rem;
+            margin-top: 5rem;
+            margin-left: 18rem;
+            background-color: aquamarine;
+            background-image: url(./image/war.jpg);
+            background-size: 100% ;
+            border-radius: 2rem;
+        }
+    </style>
+    <script>
+        (function () {
+            const calc = function () {
+                document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth / 1920 * 10 + 'px';
+            };
+            calc();
+            window.addEventListener('resize', calc);
+        })()
+    </script>    
+</head>
+<body background="./image/mainbg2.jpg" style=" background-repeat:no-repeat ; background-size:100% 100%; background-attachment: fixed;">
+    <div class="leftdiv">
+        <h1 class="maintit">嘉庚学子的小窝</h1>
+        <p class="maintit2">欢迎来到这个网站！希望每个嘉庚学子都能在这里发现乐趣。</p>
+        <p class="maintit3">网站制作人员名单：</p>
+        <p class="maintit4">初二五班509</p>
+        <p class="maintit4">Visual Studio Code</p>
+        <p class="maintit4">Google Chrome</p>
+        <p class="maintit4">Microsoft Edge</p>
+    </div>
+    <div class="rightdiv">
+        <h2 class="rtit">开始嘉庚学子的奇妙冒险吧！</h2>
+        <a href="./game.html">
+            <div class="box1"></div>
+        </a>
+        <a href="./grass.html">
+            <div class="box2"></div>
+        </a>
+        <a href="./mubu.html">
+            <div class="box3"></div>
+        </a>
+        <a href="./war.html">
+            <div class="box4"></div>
+        </a>
+    </div>
+</body>
+</html>
